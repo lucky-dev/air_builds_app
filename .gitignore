@@ -1,0 +1,5 @@
+node_modules
+*.db
+package-lock.json
+node_port
+env_vars

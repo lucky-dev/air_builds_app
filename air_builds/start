@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#export HOST=yourapp.com
+#export PORT=8080
+#export BUILDS_DIR=builds
+#export SSL_CERT_KEY_NAME_LOCATION=
+#export SSL_CERT_LOCATION=
+
+source ./env_vars
+
+node app.js &
+
+ps | grep node | awk '{ print $1 }' > node_port

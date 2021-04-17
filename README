@@ -1,0 +1,3 @@
+This app allows to distribute iOS builds. There are two modules air_builds and air_builds_uploader. The module air_builds generate a page with list of all projects and all builds for each project. A folder for each project (which contains builds) must be in the folder builds. The second module air_builds_uploader get a new build from developer and copy it to appropriate folder for particular project.
+
+Example of CURL request to upload a build: curl -v -X POST -F "ipa=@your_app.ipa" -F "projectName=your_project" -F "appName=YourApp" -F "bundleId=your.app.bundle" -F "appVersion=1.0.0" -F "buildId=1" -F "emails=notify_bob@company.com,notify_alice@company.com" https://yourhost:8081/upload

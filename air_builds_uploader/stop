@@ -1,0 +1,5 @@
+#!/bin/bash
+
+kill $(cat node_port)
+
+echo "" > node_port
